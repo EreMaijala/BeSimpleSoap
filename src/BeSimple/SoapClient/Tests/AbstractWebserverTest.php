@@ -26,7 +26,7 @@ abstract class AbstractWebServerTest extends \PHPUnit\Framework\TestCase
     static protected $webserver;
     static protected $websererPortLength;
 
-    public static function setUpBeforeClass(): void
+    public static function setUpBeforeClass()
     {
         if (version_compare(PHP_VERSION, '5.4.0', '<')) {
             self::markTestSkipped('PHP Webserver is available from PHP 5.4');
@@ -48,7 +48,7 @@ abstract class AbstractWebServerTest extends \PHPUnit\Framework\TestCase
         self::$websererPortLength = strlen(WEBSERVER_PORT);
     }
 
-    public static function tearDownAfterClass(): void
+    public static function tearDownAfterClass()
     {
         self::$webserver->stop(0);
         usleep(100000);

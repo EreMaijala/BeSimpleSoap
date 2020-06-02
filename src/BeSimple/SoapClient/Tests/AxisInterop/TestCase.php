@@ -4,7 +4,7 @@ namespace BeSimple\SoapClient\Tests\AxisInterop;
 
 class TestCase extends \PHPUnit\Framework\TestCase
 {
-    protected function setUp(): void
+    protected function setUp()
     {
         $ch = curl_init('http://localhost:8080/');
         curl_setopt($ch, CURLOPT_CONNECTTIMEOUT, 10);
