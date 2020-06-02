@@ -47,7 +47,7 @@ abstract class AbstractWebServerTest extends \PHPUnit\Framework\TestCase
         ))->getProcess();
 
         self::$webserver->start();
-        sleep(1);
+        usleep(200000);
 
         self::$websererPortLength = strlen(WEBSERVER_PORT);
     }
@@ -55,6 +55,6 @@ abstract class AbstractWebServerTest extends \PHPUnit\Framework\TestCase
     public static function doTearDownAfterClass()
     {
         self::$webserver->stop(0);
-        sleep(1);
+        usleep(100000);
     }
 }
