@@ -4,6 +4,9 @@ php:
   - 5.6
   - 7.0
   - 7.1
+  - 7.2
+  - 7.3
+  - 7.4
 
 env:
   - SYMFONY_VERSION=2.7.*
@@ -24,9 +27,3 @@ before_script:
 script:
   - bin/simple-phpunit --coverage-text --debug
 
-notifications:
-  email:
-    recipients:
-      - si-integration@smartandco.com
-    on_success: change
-    on_failure: always
