@@ -39,9 +39,10 @@
     },
     "require-dev": {
         "mikey179/vfsstream": "~1.0",
+        "phpunit/phpunit": "^6.5.14",
         "symfony/filesystem": "~2.3",
         "symfony/process": "~2.3",
-        "symfony/phpunit-bridge": "5.0.4"
+        "symfony/phpunit-bridge": "*"
     },
     "autoload": {
         "psr-0": { "BeSimple\\": "src"}
