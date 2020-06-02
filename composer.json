@@ -41,7 +41,7 @@
         "mikey179/vfsstream": "~1.0",
         "symfony/filesystem": "~2.3",
         "symfony/process": "~2.3",
-        "symfony/phpunit-bridge": "*"
+        "symfony/phpunit-bridge": "5.0.4"
     },
     "autoload": {
         "psr-0": { "BeSimple\\": "src"}
