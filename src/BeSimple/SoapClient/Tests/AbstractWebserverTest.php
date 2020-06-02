@@ -20,6 +20,10 @@ use Symfony\Component\Process\ProcessBuilder;
  */
 abstract class AbstractWebServerTest extends \PHPUnit\Framework\TestCase
 {
+    // when using the SetUpTearDownTrait, methods like doSetup() can
+    // be defined with and without the 'void' return type, as you wish
+    use \Symfony\Bridge\PhpUnit\SetUpTearDownTrait;
+
     /**
      * @var ProcessBuilder
      */

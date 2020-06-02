@@ -25,6 +25,10 @@ use org\bovigo\vfs\vfsStreamWrapper;
  */
 class WsdlDownloaderTest extends AbstractWebserverTest
 {
+    // when using the SetUpTearDownTrait, methods like doSetup() can
+    // be defined with and without the 'void' return type, as you wish
+    use \Symfony\Bridge\PhpUnit\SetUpTearDownTrait;
+
     protected static $filesystem;
 
     protected static $fixturesPath;
