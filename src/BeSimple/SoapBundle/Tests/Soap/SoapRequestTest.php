@@ -21,10 +21,6 @@ use BeSimple\SoapBundle\Soap\SoapRequest;
  */
 class SoapRequestTest extends \PHPUnit\Framework\TestCase
 {
-    // when using the SetUpTearDownTrait, methods like doSetup() can
-    // be defined with and without the 'void' return type, as you wish
-    use \Symfony\Bridge\PhpUnit\SetUpTearDownTrait;
-
     public function testMtomMessage()
     {
         $this->markTestSkipped('Skip because I\'m not sure that SoapRequest is used in a HTTP Request process.');

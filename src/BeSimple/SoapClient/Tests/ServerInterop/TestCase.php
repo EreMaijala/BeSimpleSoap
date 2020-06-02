@@ -8,7 +8,7 @@ class TestCase extends \PHPUnit\Framework\TestCase
     // be defined with and without the 'void' return type, as you wish
     use \Symfony\Bridge\PhpUnit\SetUpTearDownTrait;
 
-    protected function setUp()
+    protected function doSetUp()
     {
         if (version_compare(PHP_VERSION, '5.3.0', '=')) {
             $this->markTestSkipped(

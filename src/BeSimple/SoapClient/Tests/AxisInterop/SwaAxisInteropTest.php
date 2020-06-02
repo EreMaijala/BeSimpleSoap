@@ -26,10 +26,6 @@ use BeSimple\SoapClient\Tests\AxisInterop\TestCase;
 
 class SwaAxisInteropTest extends TestCase
 {
-    // when using the SetUpTearDownTrait, methods like doSetup() can
-    // be defined with and without the 'void' return type, as you wish
-    use \Symfony\Bridge\PhpUnit\SetUpTearDownTrait;
-
     private $options = array(
         'soap_version'    => SOAP_1_1,
         'features'        => SOAP_SINGLE_ELEMENT_ARRAYS, // make sure that result is array for size=1

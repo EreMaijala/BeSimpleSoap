@@ -91,7 +91,7 @@ class SoapRequestTest extends \PHPUnit\Framework\TestCase
         $this->assertEquals(1, Cache::getLimit());
     }
 
-    public function setUp()
+    public function doSetUp()
     {
         ini_restore('soap.wsdl_cache_enabled');
         ini_restore('soap.wsdl_cache');
